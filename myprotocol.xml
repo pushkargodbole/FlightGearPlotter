@@ -1,0 +1,115 @@
+<!-- This xml file has to be placed in the protocol directory of FG. It will tell FG, what data to spit out. -->
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <generic>
+
+  <output>
+   <line_separator>\n</line_separator>
+   <var_separator>" "</var_separator>
+
+   <chunk>
+    <name>elapsed time (sec)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/sim/time/elapsed-sec</node>
+   </chunk>
+   
+    <chunk>
+    <name>altitude(ft)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/position/altitude-ft</node>
+   </chunk>
+
+   <chunk>
+    <name>heading (deg)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/orientation/heading-deg</node>
+   </chunk>
+
+   <chunk>
+    <name>roll (deg)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/orientation/roll-deg</node>
+   </chunk>
+
+   <chunk>
+    <name>pitch (deg)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/orientation/pitch-deg</node>
+   </chunk>
+
+   <chunk>
+    <name>yaw (deg)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/orientation/yaw-deg</node>
+   </chunk>
+
+   <chunk>
+    <name>sideslip (deg)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/orientation/side-slip-deg</node>
+   </chunk>
+
+   <chunk>
+    <name>rollrate (degps)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/orientation/roll-rate-degps</node>
+   </chunk>
+
+   <chunk>
+    <name>pitchrate (deg)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/orientation/pitch-rate-degps</node>
+   </chunk>
+
+   <chunk>
+    <name>yawrate (deg)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/orientation/yaw-rate-degps</node>
+   </chunk>
+
+   <chunk>
+    <name>alpha (deg)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/orientation/alpha-deg</node>
+   </chunk>
+
+   <chunk>
+    <name>airspeed (kt)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/velocities/airspeed-kt</node>
+   </chunk>
+
+   <chunk>
+    <name>mach</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/velocities/mach</node>
+   </chunk>
+
+   <chunk>
+    <name>verticalspeed (fps)</name>
+    <type>float</type>
+    <format>%f</format>
+    <node>/velocities/vertical-speed-fps</node>
+   </chunk>
+
+
+  </output>
+
+ </generic>
+
+</PropertyList>
